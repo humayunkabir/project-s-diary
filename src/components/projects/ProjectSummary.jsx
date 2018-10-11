@@ -1,10 +1,13 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const ProjectSummary = props => {
   return (
     <div className="card z-depth-0 project-summary">
       <div className="card-content grey-text text-darken-3">
-        <span className="card-title">Project Title</span>
+        <Link to="/:id">
+          <span className="card-title">Project Title</span>
+        </Link>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit esse
           recusandae laborum corrupti perspiciatis! Hic fugit sequi obcaecati
