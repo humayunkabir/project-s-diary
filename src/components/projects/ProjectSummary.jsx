@@ -1,19 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const ProjectSummary = props => {
+const ProjectSummary = ({ project }) => {
+  const { title, body } = project;
   return (
     <div className="card z-depth-0 project-summary">
       <div className="card-content grey-text text-darken-3">
         <Link to="/:id">
-          <span className="card-title">Project Title</span>
+          <span className="card-title">{title}</span>
         </Link>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit esse
-          recusandae laborum corrupti perspiciatis! Hic fugit sequi obcaecati
-          illum et animi numquam quam, consequuntur at ad sed quod asperiores
-          error.
-        </p>
+        <p>Posted by Humayun</p>
         <p className="grey-text">3rd September, 2AM</p>
       </div>
     </div>
