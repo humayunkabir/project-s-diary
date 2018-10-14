@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 import Notification from './Notifications';
 import ProjectList from '../projects/ProjectList';
-import { connect } from 'react-redux';
 
 class Dashboard extends Component {
   render() {
